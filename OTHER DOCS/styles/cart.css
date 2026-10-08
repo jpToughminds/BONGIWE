@@ -1,0 +1,119 @@
+
+.subtotal{
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+}
+
+.subtotalAmout{
+    font-weight: bolder;
+    font-size: larger;
+}
+.checkout{
+    border-radius: 15px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: none;
+    border: none;
+}
+.holizontal-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-bottom: 5px;
+    width: 75%;
+ 
+}
+.cart-details{
+    display: flex;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+#delete{
+    margin-left: 12px;
+    border-radius: 15px;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid;
+    width: fit-content;
+
+
+    .minus-icon,.counter,.add-icon{
+            display: flex;
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+    }
+    svg{
+    width: 15px;
+    }
+}
+ 
+.item-details{
+    display: flex;
+    margin-top: 10px;
+}
+.item-description{
+    text-align: center;
+}
+.product-category,.product-class{
+    margin: 0px;
+    border: 1px solid;
+}
+.Availability{
+   
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image{
+     height: 260px;
+     width: 260px;
+    overflow: hidden;
+    
+}
+.image img{
+     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.item-container{
+    margin-top: 10px;
+    
+}
+.cart-itmes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers each item-container horizontally */
+  gap: 1rem;             /* space between the two items */
+}
+
+.item-container {
+  width: 100%;
+  max-width: 400px;      /* without a width limit, there's nothing to center */
+  border: 1px solid #ccc;
+  padding-bottom: 10px;          /* centers the item-container */
+}

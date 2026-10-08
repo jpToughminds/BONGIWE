@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#96c3e2">
+  <title>Admin | AllthingscutebyAD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSSallthings/admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <a class="brand" href="/index.html">Allthingscute<span>byAD</span><small>Store administration</small></a>
+    <a href="/index.html">View store</a>
+  </header>
+  <main class="admin-main">
+    <h1>Store administration</h1>
+    <p id="admin-status" class="status" role="status" aria-live="polite"></p>
+
+    <section id="login-panel" class="panel">
+      <h2>Admin sign in</h2>
+      <p>Sign in using an admin account created in your Supabase project.</p>
+      <form id="login-form">
+        <label>Email<input name="email" type="email" autocomplete="username" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button" type="submit">Sign in</button>
+      </form>
+    </section>
+
+    <section id="dashboard" hidden>
+      <div class="dashboard-head">
+        <p id="admin-email"></p>
+        <button id="sign-out" class="button button-secondary" type="button">Sign out</button>
+      </div>
+
+      <section class="panel">
+        <h2>Products</h2>
+        <form id="product-form" class="form-grid">
+          <input type="hidden" name="originalId">
+          <input type="hidden" name="currentImage">
+          <label>Product name<input name="name" maxlength="120" required></label>
+          <label>Category
+            <select name="category" required>
+              <option value="Shoes">Shoes</option>
+              <option value="Clothes">Clothes</option>
+              <option value="Wigs">Wigs</option>
+              <option value="Jewelry">Jewelry</option>
+              <option value="Bags">Bags</option>
+              <option value="House Accessories">House Accessories</option>
+            </select>
+          </label>
+          <label>Price (MWK)<input name="price" type="number" min="0" step="0.01" required></label>
+          <label>Badge (optional)<input name="badge" maxlength="40"></label>
+          <label>Product image<input name="image" type="file" accept="image/*"></label>
+          <div class="form-actions">
+            <button class="button" type="submit">Save product</button>
+            <button id="cancel-product-edit" class="button button-secondary" type="button" hidden>Cancel edit</button>
+          </div>
+        </form>
+        <div id="product-list" class="record-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Contact messages</h2>
+        <p>Messages sent from the public contact form appear here.</p>
+        <div id="message-list" class="record-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Our Story content</h2>
+        <form id="story-form" class="form-grid">
+          <label>Eyebrow<input name="eyebrow" maxlength="120" required></label>
+          <label>Title<textarea name="title" rows="2" maxlength="180" required></textarea></label>
+          <label class="wide">Introduction<textarea name="intro" rows="3" maxlength="1000" required></textarea></label>
+          <label class="wide">Section heading<input name="heading" maxlength="180" required></label>
+          <label class="wide">First paragraph<textarea name="body_one" rows="4" maxlength="3000" required></textarea></label>
+          <label class="wide">Second paragraph<textarea name="body_two" rows="4" maxlength="3000" required></textarea></label>
+          <label class="wide">Pull quote<input name="quote" maxlength="300" required></label>
+          <label class="wide">Third paragraph<textarea name="body_three" rows="4" maxlength="3000" required></textarea></label>
+          <label>Story photo (optional)<input name="photo" type="file" accept="image/*"></label>
+          <div class="form-actions">
+            <button class="button" type="submit">Save story</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/JSallthings/supabase-config.js"></script>
+  <script src="/JSallthings/store.js"></script>
+  <script src="/JSallthings/admin.js"></script>
+</body>
+</html>

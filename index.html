@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+     <meta name="theme-color" content="#96c3e2" />
+    <title>AllthingscutebyAD — Style, your way</title>
+    <meta name="description" content="Review the items in your AllthingscutebyAD cart.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSSallthings/index.css">
+</head>
+<body>
+    <!--<div class="announcement">A little something lovely — <b>free shipping</b> on orders over $75</div>-->
+
+   <header class="site-header">
+        <div class="wrap">
+            <div class="bar">
+            <a class="logo" href="index.html" aria-label="AllthingscutebyAD home"><b>Allthingscute<i>byAD</i></b><small>STYLE, YOUR WAY</small></a>
+            <nav class="nav" id="nav" aria-label="Main">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="/HTMLallthings/Our Story _ AllthingscutebyAD.html">Our story</a>
+                <a href="/HTMLallthings/Contact Us _ AllthingscutebyAD.html">Contacts</a>
+            </nav>
+            <div class="tools">
+                <a class="cart" href="/HTMLallthings/Your Cart _ AllthingscutebyAD.html" aria-label="Cart, 0 items"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.500l2.200 11h10.300l2-8H6.500"/><circle cx="9" cy="19.500" r="1.200"/><circle cx="17" cy="19.500" r="1.200"/></svg><span id="cart-count">0</span></a>
+                <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h11M4 17h16"/></svg></button>
+            </div>
+            </div>
+        </div>
+   </header>
+
+    <header class="header-products">
+       <div class="products-wrap">
+            <nav class="nav products-nav">
+                <a href="#" id="all">All</a>
+                <a href="#" id="clothesTab">Clothes</a>
+                <a href="#" id="shoesTab">shoes</a>
+                <a href="#" id="wigsTab">wigs</a>
+                <a href="#" id="jewelryTab">jewelry</a>
+                <a href="#" id="bagsTab">Bags</a>
+                <a href="#" id="houseTab">House Accessories</a>
+            </nav>
+            <div class="twerks">
+                <div class="nav">
+                    <a href="#featured" class="NewStock">New Stock</a>
+                    <a href="#featured" class="bestSeller">Best sellers</a>
+                </div>
+            </div>
+       </div>
+    </header>
+
+    <div class="header2">
+        <div class="headerContainer">
+        <div class="icon"></div>
+        <div class="options">
+            <div class="optionsContainer">
+                <div class="searchIcon"></div>
+                <div class="home">home</div>
+                <div class="products">products</div>
+                <div class="brog">brog</div>
+                <div class="about">about</div>
+                <div class="contacts">contacts</div>
+            </div>
+            <div class="addToCart">add</div>
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <div class="itemContainer">
+           <!--clothes tab-->
+            <div class="hero-main">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1300&q=85" alt="Woman in a chic neutral outfit" loading="lazy">
+                <div class="hero-copy">
+                <div class="eyebrow">The new season edit</div>
+                <h1>Feel cute.<br>Be you.</h1>
+                <p>Little things that make you feel like the best version of yourself. Find your new favorite today.</p>
+                <a class="btn" href="#categories">Shop the collection <span>→</span></a>
+                </div>
+            </div>
+            <!--shoes tab-->
+            <div class="hero-main" href="#categories">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rPO8K9i-c21OOkZtDKcu__OHGgDs4h7Q7kkB447UrA&s=10" alt="A pair of stylish heels" loading="lazy">
+                <div class="side-copy">
+                    <small>Step into something lovely</small>
+                    <h2>Shoes to love</h2>
+                    <a class="btn" href="#categories">Shop shoes →</a>
+                    <span class="text-link">Shop shoes →</span>
+                </div>
+          </div>
+           <!--jewelry tab-->
+          <div class="hero-main" href="#categories">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80" alt="Gold jewelry" loading="lazy">
+            <div class="side-copy">
+              <small>Your little sparkle</small>
+              <h2>Jewelry edit</h2>
+              <a class="btn" href="#categories">Shop jewelry →</a>
+            </div>
+          </div>
+          <!--wigs tab-->
+          <div class="hero-main" href="#categories">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTjbR0cYACHZYfbtIxsg9fu1krcEa8y6SXCbswASoBZkrSB3hBooDhJg&s=10" alt="Gold jewelry" loading="lazy">
+            <div class="side-copy">
+              <small>Your perfect wig</small>
+              <h2>Wig edit</h2>
+              <a class="btn" href="#categories">Shop Wigs →</a>
+            </div>
+          </div>
+        </div>
+       
+        <section class="featured" id="featured">
+            <div class="wrap">
+                <div class="section-head"><div>
+                    <p>Fresh finds, you’ll want to wear on repeat.</p>
+                </div>
+                <div class="tabs">
+                    <button class="active">Featured</button>
+                    <button>New arrivals</button>
+                    <button>Best sellers</button>
+                </div>
+            </div>
+             <!--all products-->
+            <div class="products">
+       
+                <article class="product shoesItem" class="shoes" class="data-category">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/whiteHeels.JPG" alt="Strappy heeled sandals" loading="lazy">
+                    <span class="badge">Bestseller</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Shoes</small>
+                    <h3 class="product-comment">Sunday Best Heels</h3>
+                    <div class="price">k48.00</div></div>
+                </article>
+
+                <article class="product shoesItem" class="shoes" >
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/whiteHeels2.jpg" alt="Soft tan everyday handbag" loading="lazy"><span class="badge">Just lovely</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">shoes</small>
+                    <h3 class="product-comment">Best heels</h3>
+                    <div class="price">k44.00</div>
+                    </div>
+                </article>
+        
+                <article class="product clothesItem" class="clothing">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/WhiteDress.JPG" alt="Effortless everyday outfit" loading="lazy">
+                    <span class="badge">New in</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Clothing</small>
+                    <h3 class="product-comment">Soft Life</h3>
+                    <div class="price">k62.00</div>
+                    </div>
+                </article>
+
+                <article class="product clothesItem" class="clothing">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/GoldenDress.jpg" alt="Effortless everyday outfit" loading="lazy">
+                    <span class="badge">New in</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Clothing</small>
+                    <h3 class="product-comment">Softest Life</h3>
+                    <div class="price">k62.00</div>
+                    </div>
+                </article>
+
+                <article class="product clothesItem" class="clothing">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/shirt.jpg" alt="Effortless everyday outfit" loading="lazy">
+                    <span class="badge">New in</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Clothing</small>
+                    <h3 class="product-comment">black shirt for a serious occasion</h3>
+                    <div class="price">k62.00</div>
+                    </div>
+                </article>
+
+                 <article class="product wigsItem" class="wigs">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/wigs.jpg" alt="Effortless everyday outfit" loading="lazy">
+                    <span class="badge">New in</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Wigs</small>
+                    <h3 class="product-comment">perfect hair for a perfect day</h3>
+                    <div class="price">k500.00</div>
+                    </div>
+                </article>
+
+                 <article class="product wigsItem" class="wigs">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/wigs2.jpg" alt="Effortless everyday outfit" loading="lazy">
+                    <span class="badge">New in</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Wigs</small>
+                    <h3 class="product-comment">perfect hair for a perfect day</h3>
+                    <div class="price">k500.00</div>
+                    </div>
+                </article>
+
+                <article class="product jewelryItem" class="jewelry">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/jewerlyNecklace.JPG" alt="Golden layered jewelry" loading="lazy">
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Jewelry</small>
+                    <h3 class="product-comment">Golden Hoops</h3>
+                    <div class="price">k26.00</div>
+                    </div>
+                </article>
+
+                 <article class="product jewelryItem" class="jewelry">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/jewerlyWatch.jpg" alt="Golden layered jewelry" loading="lazy">
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Jewelry</small>
+                    <h3 class="product-comment">Golden Hour</h3>
+                    <div class="price">k26.00</div>
+                    </div>
+                </article>
+
+                 <article class="product bagsItem" class="bags">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/whiteBack.JPG" alt="Soft tan everyday handbag" loading="lazy"><span class="badge">Just lovely</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Bags</small>
+                    <h3 class="product-comment">Everywhere Mini Tote</h3>
+                    <div class="price">k54.00</div>
+                    </div>
+                </article>
+
+                 <article class="product houseItem" class="house">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/chair.jpg" alt="Soft tan everyday handbag" loading="lazy"><span class="badge">Just lovely</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">chair</small>
+                    <h3 class="product-comment">its more than a chair</h3>
+                    <div class="price">k554.00</div>
+                    </div>
+                </article>
+
+                  <article class="product houseItem" class="house">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/armchair.jpg" alt="Soft tan everyday handbag" loading="lazy"><span class="badge">Just lovely</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">chair</small>
+                    <h3 class="product-comment">its more than a chair</h3>
+                    <div class="price">k554.00</div>
+                    </div>
+                </article>
+
+
+                <article class="product bagsItem" class="bags">
+                    <div class="product-photo">
+                    <img src="/images/bongiwe/whiteBack.JPG" alt="Soft tan everyday handbag" loading="lazy"><span class="badge">Just lovely</span>
+                    <div class="quick">
+                        <button class="btn" onclick="addBag()">Add to Cart<span>+</span></button>
+                    </div>
+                    </div>
+                    <div class="product-info">
+                    <small class="product-category">Bags</small>
+                    <h3 class="product-comment">Everywhere Mini Tote ya mamizo</h3>
+                    <div class="price">k54.00</div>
+                    </div>
+                </article>
+
+                
+            </div>
+            </div>
+        </section>
+
+        <div class="perks wrap">
+            <section class="perks">
+                <div class="perk">
+                <span class="perk-ico">♡</span><div><b>Free shipping</b><small>On orders over k75</small></div></div>
+                <div class="perk"><span class="perk-ico">↺</span><div><b>Easy returns</b><small>3 days to fall in love</small></div></div>
+                <div class="perk"><span class="perk-ico">✧</span><div><b>Picked with love</b><small>Curated just for you</small></div></div>
+                <div class="perk"><span class="perk-ico">☏</span><div><b>Here to help</b><small>Friendly support, always</small></div></div>
+            </section>
+        </div>
+    </div>
+     <footer class="footer" id="story">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="brand" href="#top">Allthingscute<span class="ad">byAD</span><small>Style, your way</small></a>
+                    <p>For every version of you. <br> Discover pieces that bring a little joy to getting dressed,<br> showing up and feeling like yourself.</p>
+                    <div class="social">
+                        <a href="#" id="instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                        <a href="#" id="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z"/></svg></a>
+                        <a href="#" id="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg></a>
+                        <a href="#" id="tiktok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="#categories">Shoes</a>
+                    <a href="#categories">Clothing</a>
+                    <a href="#categories">Jewelry</a>
+                    <a href="#categories">Wigs</a>
+                    <a href="#categories">Bags</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Need a hand?</h4>
+                    <a href="#">Contact us</a>
+                    <a href="#">Shipping &amp; delivery</a>
+                    <a href="#">Returns &amp; exchanges</a>
+                    <a href="#">FAQs</a>
+                </div>
+                <div class="footer-col">
+                    <h4>About AD</h4>
+                    <a href="#story">Our story</a>
+                    <a href="#">Size guide</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms of service</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Say hello</h4>
+                    <p>We’re always happy to help.</p>
+                    <a href="mailto:hello@allthingscutebyad.com">hello@allthingscutebyad.com</a>
+                    <p>Follow along @allthingscutebyad</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2026 AllthingscutebyAD. Made with love ♡</span>
+                <span class="payment">VISA & Mobile money</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/JSallthings/supabase-config.js"></script>
+    <script src="/JSallthings/store.js"></script>
+    <script src="/JSallthings/home.js"></script>
+</body>
+</html>

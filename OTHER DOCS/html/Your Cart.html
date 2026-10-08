@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Cart | AllthingscutebyAD</title>
+<meta name="description" content="Review the items in your AllthingscutebyAD cart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="yourCart.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="bar">
+      <a class="logo" href="index.html" aria-label="AllthingscutebyAD home"><b>Allthingscute<i>byAD</i></b><small>STYLE, YOUR WAY</small></a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="our-story.html">Our story</a>
+        <a href="contact.html">Contacts</a>
+      </nav>
+      <div class="tools">
+        <a class="cart" href="cart.html" aria-label="Cart, 0 items"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.500l2.200 11h10.300l2-8H6.500"/><circle cx="9" cy="19.500" r="1.200"/><circle cx="17" cy="19.500" r="1.200"/></svg>0</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h11M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+
+<div class="wrap">
+  <section class="hero compact">
+    <h1 id="page-title" tabindex="-1">Your Cart</h1>
+    <p class="lede" id="cart-lede">Review your picks before you check out.</p>
+  </section>
+
+  <div class="basket" id="basket">
+    <ul class="lines" id="lines" aria-label="Items in your cart"></ul>
+
+    <aside class="summary" aria-labelledby="sum-h">
+      <h2 id="sum-h">Order summary</h2>
+      <dl class="rows">
+        <div><dt>Subtotal</dt><dd id="subtotal">k0.00</dd></div>
+        <div><dt>Shipping</dt><dd id="shipping">Free</dd></div>
+        <div class="total"><dt>Total</dt><dd id="total">k0.00</dd></div>
+      </dl>
+      <div class="ship">
+        <p id="ship-msg"></p>
+        <div class="bar-track" role="progressbar" aria-label="Progress to free shipping" aria-valuemin="0" aria-valuemax="75" aria-valuenow="0" id="ship-bar"><div class="bar-fill" id="ship-fill"></div></div>
+      </div>
+      <a class="btn block" href="checkout.html" id="checkout">Proceed to checkout <small id="checkout-count"></small></a>
+      <a class="link keep" href="/home.html">Continue shopping</a>
+    </aside>
+  </div>
+
+  <section class="empty" id="empty" hidden>
+    <h2>Your cart is empty</h2>
+    <p>Fresh finds are waiting. Add something you'll want to wear on repeat.</p>
+    <a class="btn" href="/home.html">Browse the collection</a>
+  </section>
+</div>
+
+</main>
+
+<footer class="footer" id="story">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="brand" href="#top">Allthingscute<span class="ad">byAD</span><small>Style, your way</small></a>
+                    <p>For every version of you. <br> Discover pieces that bring a little joy to getting dressed,<br> showing up and feeling like yourself.</p>
+                    <div class="social">
+                        <a href="#" id="instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                        <a href="#" id="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z"/></svg></a>
+                        <a href="#" id="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg></a>
+                        <a href="#" id="tiktok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="#categories">Shoes</a>
+                    <a href="#categories">Clothing</a>
+                    <a href="#categories">Jewelry</a>
+                    <a href="#categories">Wigs</a>
+                    <a href="#categories">Bags</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Need a hand?</h4>
+                    <a href="#">Contact us</a>
+                    <a href="#">Shipping &amp; delivery</a>
+                    <a href="#">Returns &amp; exchanges</a>
+                    <a href="#">FAQs</a>
+                </div>
+                <div class="footer-col">
+                    <h4>About AD</h4>
+                    <a href="#story">Our story</a>
+                    <a href="#">Size guide</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms of service</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Say hello</h4>
+                    <p>We’re always happy to help.</p>
+                    <a href="mailto:hello@allthingscutebyad.com">hello@allthingscutebyad.com</a>
+                    <p>Follow along @allthingscutebyad</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2026 AllthingscutebyAD. Made with love ♡</span>
+                <span class="payment">VISA & Mobile money</span>
+            </div>
+        </div>
+    </footer>
+<script src="yourCart.js" defer></script>
+</body>
+</html>

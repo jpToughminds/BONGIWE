@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our Story | AllthingscutebyAD</title>
+<meta name="description" content="The story behind AllthingscutebyAD: style, your way.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/ourStory.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="bar">
+      <a class="logo" href="index.html" aria-label="AllthingscutebyAD home"><b>Allthingscute<i>byAD</i></b><small>STYLE, YOUR WAY</small></a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="our-story.html" aria-current="page">Our story</a>
+        <a href="contact.html">Contacts</a>
+      </nav>
+      <div class="tools">
+        <a class="cart" href="cart.html" aria-label="Cart, 0 items"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.500l2.200 11h10.300l2-8H6.500"/><circle cx="9" cy="19.500" r="1.200"/><circle cx="17" cy="19.500" r="1.200"/></svg>0</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h11M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Our Story</h1>
+    <p class="lede">Getting dressed should feel like joy, not a chore. That is where AllthingscutebyAD began.</p>
+  </section>
+
+  <section class="story">
+    <div class="photo" role="img" aria-label="Photo placeholder"><span>Add a photo of AD, the studio or a favourite piece here</span></div>
+    <div class="prose">
+      <h2>Fresh finds you'll want to wear on repeat</h2>
+      <p>It started with friends asking the same question: where did you get that? We kept finding the heels, the dresses and the little finishing touches that made an outfit feel complete, and we wanted to share them.</p>
+      <p>Today the shop carries shoes, clothing, wigs, jewelry and bags, plus a few pieces for the home. Everything is chosen by hand. If we wouldn't wear it again and again, it doesn't make the shelf.</p>
+      <p class="pull">For every version of you.</p>
+      <p>Some days you are soft and quiet. Other days you are all heels and gold. We think your wardrobe should have room for both, and that shopping for it should be easy, friendly and a little bit fun.</p>
+    </div>
+  </section>
+
+  <section class="promises" aria-labelledby="promises-h">
+    <h2 id="promises-h">What you can count on</h2>
+    <dl class="promise-grid">
+      <div><dt>Free shipping</dt><dd>On orders over k75.</dd></div>
+      <div><dt>Easy returns</dt><dd>You have 3 days to fall in love, or send it back.</dd></div>
+      <div><dt>Picked with love</dt><dd>Every piece is curated for you, never bulk-listed.</dd></div>
+      <div><dt>Here to help</dt><dd>Friendly support whenever you have a question.</dd></div>
+    </dl>
+  </section>
+
+  <section class="closing">
+    <p>Ready to find your next favourite?</p>
+    <div class="actions">
+      <a class="btn" href="index.html">Shop the collection</a>
+      <a class="link" href="contact.html">Say hello</a>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <span>&copy; 2026 AllthingscutebyAD. Made with love &#9825;</span>
+    <span><a href="mailto:hello@allthingscutebyad.com">hello@allthingscutebyad.com</a></span>
+    <span>VISA &amp; Mobile money</span>
+  </div>
+</footer>
+<script>
+const btn=document.getElementById('menu-btn'),nav=document.getElementById('nav');
+btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

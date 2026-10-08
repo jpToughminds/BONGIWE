@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#96c3e2" />
+  <title>AllthingscutebyAD — Style, your way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">A little something lovely — <b>free shipping</b> on orders over $75</div>
+  <div class="wrap">
+    <header class="header">
+      <button class="icon-btn hamb" aria-label="Open menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button><a class="brand" href="#top">Allthingscute<span class="ad">byAD</span><small>Style, your way</small></a><nav class="nav"><a href="#top">Home</a><a href="#categories">Shop all</a><a href="#featured">New in</a><a href="#featured">Best sellers</a><a href="#story">Our story</a></nav><div class="actions"><button class="icon-btn" aria-label="Search" onclick="document.querySelector('#search').focus()">⌕</button><button class="icon-btn" aria-label="Account">♙</button><button class="icon-btn" aria-label="Shopping bag" onclick="alert('Your bag is ready for something cute!')">♧<span class="bag-count" id="count">0</span></button></div></header>
+  </div>
+  <main id="top">
+    <section class="hero wrap">
+      <!--clothes tab-->
+      <div class="hero-main">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1300&q=85" alt="Woman in a chic neutral outfit">
+        <div class="hero-copy">
+          <div class="eyebrow">The new season edit</div>
+          <h1>Feel cute.<br>Be you.</h1>
+          <p>Little things that make you feel like the best version of yourself. Find your new favorite today.</p>
+          <a class="btn" href="#categories">Shop the collection <span>→</span></a>
+        </div>
+      </div>
+        <!--shoes tab-->
+        <div class="hero-main">
+          <a class="hero-side" href="#categories">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rPO8K9i-c21OOkZtDKcu__OHGgDs4h7Q7kkB447UrA&s=10" alt="A pair of stylish heels">
+            <div class="side-copy">
+              <small>Step into something lovely</small>
+              <h2>Shoes to love</h2>
+              <span class="text-link">Shop shoes →</span>
+            </div>
+          </a>
+          <!--jewelry tab-->
+          <a class="hero-main" href="#categories">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80" alt="Gold jewelry">
+            <div class="side-copy">
+              <small>Your little sparkle</small>
+              <h2>Jewelry edit</h2>
+              <span class="text-link">Shop jewelry →</span>
+            </div>
+          </a>
+          <!--wigs tab-->
+          <a class="hero-main" href="#categories">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTjbR0cYACHZYfbtIxsg9fu1krcEa8y6SXCbswASoBZkrSB3hBooDhJg&s=10" alt="Gold jewelry">
+            <div class="side-copy">
+              <small>Your perfect wig</small>
+              <h2>Wig edit</h2>
+              <span class="text-link">Shop Wigs →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    <div class="wrap">
+      <section class="perks">
+        <div class="perk">
+          <span class="perk-ico">♡</span><div><b>Free shipping</b><small>On orders over $75</small></div></div>
+          <div class="perk"><span class="perk-ico">↺</span><div><b>Easy returns</b><small>30 days to fall in love</small></div></div>
+          <div class="perk"><span class="perk-ico">✧</span><div><b>Picked with love</b><small>Curated just for you</small></div></div>
+          <div class="perk"><span class="perk-ico">☏</span><div><b>Here to help</b><small>Friendly support, always</small></div></div>
+        </div>
+      </section>
+      <section id="categories"><div class="section-head"><div><h2>Find your kind of cute</h2><p>Little looks, big confidence. Explore the collection.</p></div><a class="view-all" href="#featured">Shop everything →</a></div><div class="categories">
+        <a class="category-card" href="#featured"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rPO8K9i-c21OOkZtDKcu__OHGgDs4h7Q7kkB447UrA&s=10" alt="Women's shoes"><div class="category-name"><b>Shoes</b><small>Find your sole mate</small></div></a>
+        <a class="category-card" href="#featured"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Fashion clothing"><div class="category-name"><b>Clothing</b><small>Looks that feel like you</small></div></a>
+        <a class="category-card" href="#featured"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=600&q=80" alt="Gold jewelry"><div class="category-name"><b>Jewelry</b><small>A little extra sparkle</small></div></a>
+        <a class="category-card" href="#featured"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Beauty and hair"><div class="category-name"><b>Wigs</b><small>Switch up your style</small></div></a>
+        <a class="category-card" href="#featured"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="A fashionable handbag"><div class="category-name"><b>Bags</b><small>Carry a little joy</small></div></a>
+      </div></section>
+    </div>
+    <section class="featured" id="featured"><div class="wrap"><div class="section-head"><div><h2>The cute edit</h2><p>Fresh finds you’ll want to wear on repeat.</p></div><div class="tabs"><button class="active">Featured</button><button>New arrivals</button><button>Best sellers</button></div></div><div class="products">
+      <article class="product">
+        <div class="product-photo">
+          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd?auto=format&fit=crop&w=700&q=80" alt="Strappy heeled sandals">
+          <span class="badge">Bestseller</span>
+          <div class="quick">
+            <button class="btn" onclick="addBag()">Add to bag <span>+</span></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <small>Shoes</small>
+          <h3>Sunday Best Heels</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price">$48.00</div></div>
+        </article>
+      
+      <article class="product">
+        <div class="product-photo">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Effortless everyday outfit">
+          <span class="badge">New in</span>
+          <div class="quick">
+            <button class="btn" onclick="addBag()">Add to bag <span>+</span></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <small>Clothing</small>
+          <h3>Soft Life Co-ord</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price">$62.00</div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-photo">
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80" alt="Golden layered jewelry">
+          <div class="quick">
+            <button class="btn" onclick="addBag()">Add to bag <span>+</span></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <small>Jewelry</small>
+          <h3>Golden Hour Hoops</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price">$26.00</div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-photo">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Soft tan everyday handbag"><span class="badge">Just lovely</span>
+          <div class="quick">
+            <button class="btn" onclick="addBag()">Add to bag <span>+</span></button>
+          </div>
+        </div>
+        <div class="product-info">
+          <small>Bags</small>
+          <h3>Everywhere Mini Tote</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price">$54.00</div>
+        </div>
+      </article>
+      </div>
+      </div>
+    </section>
+    <div class="wrap"><section class="promo-row"><a class="promo" href="#categories"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Beauty look"><div class="promo-copy"><small>Hair day, your way</small><h3>New hair, who this?</h3><span class="text-link">Explore the wig edit →</span></div></a><a class="promo" href="#categories"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Fashion outfit"><div class="promo-copy"><small>Dress like you mean it</small><h3>Outfits for your moment</h3><span class="text-link">Shop clothing →</span></div></a></section>
+      <section class="best-sellers"><div class="section-head"><div><h2>Everyone’s loving</h2><p>Little favorites, picked by you.</p></div><a class="view-all" href="#featured">See all favorites →</a></div><div class="mini-grid"><div class="mini-col"><h3>Hot right now</h3><div class="mini-item"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Sunday Best Heels</b><small>★★★★★</small><span>$48.00</span></div></div><div class="mini-item"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Everywhere Mini Tote</b><small>★★★★★</small><span>$54.00</span></div></div></div><div class="mini-col"><h3>New favorites</h3><div class="mini-item"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Soft Life Co-ord</b><small>★★★★★</small><span>$62.00</span></div></div><div class="mini-item"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Golden Hour Hoops</b><small>★★★★★</small><span>$26.00</span></div></div></div><div class="mini-col"><h3>Style staples</h3><div class="mini-item"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=150&q=70" alt=""><div><b>The Everyday Wave</b><small>★★★★★</small><span>$89.00</span></div></div><div class="mini-item"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Weekend Mood Dress</b><small>★★★★★</small><span>$58.00</span></div></div></div><div class="mini-col"><h3>Gifts she’ll adore</h3><div class="mini-item"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Golden Hour Hoops</b><small>★★★★★</small><span>$26.00</span></div></div><div class="mini-item"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=150&q=70" alt=""><div><b>Everywhere Mini Tote</b><small>★★★★★</small><span>$54.00</span></div></div></div></div></section>
+      <section class="newsletter"><h2>A little love in your inbox</h2><p>Get first dibs on new arrivals, feel-good finds and 10% off your first order.</p><form class="subscribe" onsubmit="event.preventDefault(); this.innerHTML='<p>Thank you! You’re on the list ♡</p>'"><input id="search" type="email" required placeholder="Your email address"><button class="btn">Count me in →</button></form></section>
+    </div>
+  </main>
+  <footer class="footer" id="story"><div class="wrap"><div class="footer-grid"><div class="footer-about"><a class="brand" href="#top">Allthingscute<span class="ad">byAD</span><small>Style, your way</small></a><p>For every version of you. Discover pieces that bring a little joy to getting dressed, showing up and feeling like yourself.</p><div class="social"><a href="#">ig</a><a href="#">f</a><a href="#">tt</a><a href="#">p</a></div></div><div class="footer-col"><h4>Shop</h4><a href="#categories">Shoes</a><a href="#categories">Clothing</a><a href="#categories">Jewelry</a><a href="#categories">Wigs</a><a href="#categories">Bags</a></div><div class="footer-col"><h4>Need a hand?</h4><a href="#">Contact us</a><a href="#">Shipping &amp; delivery</a><a href="#">Returns &amp; exchanges</a><a href="#">FAQs</a></div><div class="footer-col"><h4>About AD</h4><a href="#story">Our story</a><a href="#">Size guide</a><a href="#">Privacy policy</a><a href="#">Terms of service</a></div><div class="footer-col"><h4>Say hello</h4><p>We’re always happy to help.</p><a href="mailto:hello@allthingscutebyad.com">hello@allthingscutebyad.com</a><p>Follow along @allthingscutebyad</p></div></div><div class="copyright"><span>© 2026 AllthingscutebyAD. Made with love ♡</span><span class="payment">VISA　 PayPal　 ●●●　 Mobile money</span></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
