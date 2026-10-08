@@ -12,20 +12,22 @@
   // Maximum quantity allowed per product.
   const MAX_QTY = 10;
   // Built-in product list, used when Supabase isn't configured or fails to load.
+  const PRODUCT_IMAGE_BASE = new URL("../images/bongiwe/", document.currentScript.src);
+  const productImage = fileName => new URL(fileName, PRODUCT_IMAGE_BASE).href;
   const DEFAULT_CATALOG = [
-    { id: "sunday-best-heels", category: "Shoes", name: "Sunday Best Heels", price: 48, img: "/images/bongiwe/whiteHeels.JPG", badge: "Bestseller" },
-    { id: "best-heels", category: "Shoes", name: "Best heels", price: 44, img: "/images/bongiwe/whiteHeels2.jpg", badge: "Just lovely" },
-    { id: "soft-life", category: "Clothes", name: "Soft Life", price: 62, img: "/images/bongiwe/WhiteDress.JPG", badge: "New in" },
-    { id: "softest-life", category: "Clothes", name: "Softest Life", price: 62, img: "/images/bongiwe/GoldenDress.jpg", badge: "New in" },
-    { id: "black-shirt", category: "Clothes", name: "Black shirt for a serious occasion", price: 62, img: "/images/bongiwe/shirt.jpg", badge: "New in" },
-    { id: "wig-one", category: "Wigs", name: "Perfect hair for a perfect day", price: 500, img: "/images/bongiwe/wigs.jpg", badge: "New in" },
-    { id: "wig-two", category: "Wigs", name: "Perfect hair for a perfect day", price: 500, img: "/images/bongiwe/wigs2.jpg", badge: "New in" },
-    { id: "golden-hoops", category: "Jewelry", name: "Golden Hoops", price: 26, img: "/images/bongiwe/jewerlyNecklace.JPG" },
-    { id: "golden-hour", category: "Jewelry", name: "Golden Hour", price: 26, img: "/images/bongiwe/jewerlyWatch.jpg" },
-    { id: "everywhere-mini-tote", category: "Bags", name: "Everywhere Mini Tote", price: 54, img: "/images/bongiwe/whiteBack.JPG", badge: "Just lovely" },
-    { id: "everywhere-mini-tote-two", category: "Bags", name: "Everywhere Mini Tote ya mamizo", price: 54, img: "/images/bongiwe/whiteBack.JPG", badge: "Just lovely" },
-    { id: "more-than-a-chair", category: "House Accessories", name: "It's more than a chair", price: 554, img: "/images/bongiwe/chair.jpg", badge: "Just lovely" },
-    { id: "armchair", category: "House Accessories", name: "It's more than a chair", price: 554, img: "/images/bongiwe/armchair.jpg", badge: "Just lovely" }
+    { id: "sunday-best-heels", category: "Shoes", name: "Sunday Best Heels", price: 48, img: productImage("whiteHeels.JPG"), badge: "Bestseller" },
+    { id: "best-heels", category: "Shoes", name: "Best heels", price: 44, img: productImage("whiteHeels2.jpg"), badge: "Just lovely" },
+    { id: "soft-life", category: "Clothes", name: "Soft Life", price: 62, img: productImage("WhiteDress.jpg"), badge: "New in" },
+    { id: "softest-life", category: "Clothes", name: "Softest Life", price: 62, img: productImage("GoldenDress.jpg"), badge: "New in" },
+    { id: "black-shirt", category: "Clothes", name: "Black shirt for a serious occasion", price: 62, img: productImage("shirt.jpg"), badge: "New in" },
+    { id: "wig-one", category: "Wigs", name: "Perfect hair for a perfect day", price: 500, img: productImage("wigs.jpg"), badge: "New in" },
+    { id: "wig-two", category: "Wigs", name: "Perfect hair for a perfect day", price: 500, img: productImage("wigs2.jpg"), badge: "New in" },
+    { id: "golden-hoops", category: "Jewelry", name: "Golden Hoops", price: 26, img: productImage("jewerlyNecklace.jpg") },
+    { id: "golden-hour", category: "Jewelry", name: "Golden Hour", price: 26, img: productImage("jewerlyWatch.jpg") },
+    { id: "everywhere-mini-tote", category: "Bags", name: "Everywhere Mini Tote", price: 54, img: productImage("whiteBack.JPG"), badge: "Just lovely" },
+    { id: "everywhere-mini-tote-two", category: "Bags", name: "Everywhere Mini Tote ya mamizo", price: 54, img: productImage("whiteBack.JPG"), badge: "Just lovely" },
+    { id: "more-than-a-chair", category: "House Accessories", name: "It's more than a chair", price: 554, img: productImage("chair.jpg"), badge: "Just lovely" },
+    { id: "armchair", category: "House Accessories", name: "It's more than a chair", price: 554, img: productImage("armchair.jpg"), badge: "Just lovely" }
   ];
  
   // ---------------------------------------------------------------

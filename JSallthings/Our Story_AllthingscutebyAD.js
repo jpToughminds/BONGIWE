@@ -84,5 +84,5 @@ const homeCat = document.getElementById("home-cat");
 
 
 shoesCat.addEventListener("click", () => {
-  window.location.href = "/index.html?category=shoesItem";
+  window.location.href = "../index.html?category=shoesItem";
 });

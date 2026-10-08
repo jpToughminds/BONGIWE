@@ -53,7 +53,7 @@ function renderProducts() {
   productGrid.innerHTML = products.map(product => `
     <article class="product">
       <div class="product-photo">
-        <a class="product-image-link" href="/index.html?product=${encodeURIComponent(product.id)}#featured" aria-label="View ${escapeHTML(product.name)}">
+        <a class="product-image-link" href="index.html?product=${encodeURIComponent(product.id)}#featured" aria-label="View ${escapeHTML(product.name)}">
           <img src="${escapeHTML(product.img)}" alt="${escapeHTML(product.name)}" loading="lazy">
         </a>
         ${product.badge ? `<span class="badge">${escapeHTML(product.badge)}</span>` : ""}
@@ -63,7 +63,7 @@ function renderProducts() {
       </div>
       <div class="product-info">
         <small class="product-category">${escapeHTML(product.category)}</small>
-        <h3 class="product-comment"><a class="product-name-link" href="/index.html?product=${encodeURIComponent(product.id)}#featured">${escapeHTML(product.name)}</a></h3>
+        <h3 class="product-comment"><a class="product-name-link" href="index.html?product=${encodeURIComponent(product.id)}#featured">${escapeHTML(product.name)}</a></h3>
         <div class="price">k${Number(product.price).toFixed(2)}</div>
       </div>
     </article>
